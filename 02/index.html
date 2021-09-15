@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type= "text/css" href="style.css">
+	<script src="script.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div class="body">
+	<div class="flex">
+	<div class="block">	
+	<div class="plus">
+	
+	<div  class="block_content">
+	<form method="get" name="name">
+		<label for="user_name">Самая длинная строка</label>
+		<br>
+		<input type="text" name="user_name_text" placeholder="Введите через пробел" maxlength="100" id="user_name">
+		<button name="user_name_button" value="Отправить" onclick="nameForm(); return false;" onsubmit="return false;">Отправить</button>
+	</form>
+	</div>
+	
+	<div class="block_content">
+	<form method="get" name="area">
+		<label> Частоиспользуемый символ </label>
+		<br>
+		<input type="text" name="area_side" placeholder="Введите строку" maxlength="20" id="area_side">
+		<button name="area_button" value="Вычислить площадь" onclick="takeArea(); return false()" onsubmit="return false">Отправить</button>
+	</form>
+	</div>
+	
+	<div class="block_content">
+	<form method="get" name="strings">
+		<label>Замена частоиспользуемого символа в предыдущей строке</label>
+		<br>
+		<input type="text" name="first_string" placeholder="Введите символ" id="first_string">
+		<input type="submit" name="area_button" value="Отправить" onclick="compareStrings()">
+	</form>	
+	</div>
+
+	<div class="block_content">
+		<form method="get" name="maxmin">
+		<label> Являются ли строки анаграммами</label>
+		<br>
+		<input type="text" name="first_str" placeholder="Введите 1 строку" id="str1">
+		<input type="text" name="second_str" placeholder="Введите 2 строку" id="str2">	
+		<input type="submit" name="maxmin_button" value="Отправить" onclick="takeMaxMin()">
+		</form>
+	</div>
+
+</body>
+</html>

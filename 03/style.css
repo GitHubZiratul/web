@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    background-color: papayawhip;
+}
+
+
+/* Header */
+
+.header-container {
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: auto;
+    padding: 15px;
+}
+
+.header-block {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* AddFilm */
+
+.film-adder {
+    margin-top: 15px;
+    display: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-adder {
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-wrapper input {
+    background-color: purple;
+    font-size: 20px;
+    color: white;
+}
+
+.form-adder input {
+    background-color: papayawhip;
+}
+
+.form-adder select {
+    background-color: papayawhip;
+    color: white;
+}
+
+.form-adder label {
+    color: white;
+}
+
+
+/* CatalogFilm */
+
+table {
+    border-spacing: 10px;
+}
+
+th {
+    padding: 10px 20px;
+    background: purple;
+    color: white;
+    font-size: 0.9em;
+}
+
+th:first-child {
+    text-align: left;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+td {
+    vertical-align: top;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+td:first-child {
+    border-right: none;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+.imgBlock {
+    width: 150px;
+    height: 220px;
+}
+
+button {
+    background-color: purple;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Комментарии */
+
+.comment-element {
+    display: none;
+    background-color: purple;
+    height: 0;
+    margin: 10px;
+}
+
+.comment-form {
+    display: block;
+    opacity: 0;
+    padding: 10px;
+}
+
+.form-control_textarea {
+    width: 40%;
+    resize: none;
+}
+
+.rating-area {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating-area:not(:checked)>input {
+    display: none;
+}
+
+.rating-area:not(:checked)>label {
+    float: right;
+    width: 42px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 32px;
+    color: white;
+}
+
+.rating-area:not(:checked)>label:before {
+    content: '+';
+}
+
+.rating-area>input:checked~label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+
+.rate-area>label:active {
+    position: relative;
+}
+
+
+/* YourFilms
+.yourFilms-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+}
+.yourFilms-container span {
+    font-size: 35px;
+    color: white;
+}
+.yourFilms-header {
+    height: auto;
+    background-color: rgba(185, 38, 38, 0.432);
+}
+.yourFilms-container input {
+    background-color: rgba(185, 38, 38, 0.432);
+    font-size: 20px;
+    color: white;
+} */
+
+
+/* Filter */
+
+.dropdown-filter {
+    padding: 10px;
+    position: relative;
+    display: none;
+}
+
+.filterBtn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.dropdown-choice {
+    display: none;
+    position: absolute;
+    background-color: papayawhip;
+    border: 5px solid purple;
+    color: white;
+    min-width: 160px;
+}
